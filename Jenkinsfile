@@ -13,7 +13,7 @@ pipeline {
             steps{
                 git branch: 'main', url: 'https://github.com/adnanshafique468/ci-cd-pipeline-through-jenkins-docker-webhook'
         }
-
+        }
         stage('Build Docker Image') {
             steps {
                 sh 'docker build -t $IMAGE_NAME .'
